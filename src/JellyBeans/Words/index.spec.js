@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { cleanup, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
 import { Words } from '.';
 
@@ -20,15 +20,26 @@ const renderComponent = (overrides) =>
   render(<Words {...defaultProps} {...overrides} />);
 
 describe('Words', () => {
-  beforeEach(cleanup);
-
   test('should render properly', () => {
     const { container } = renderComponent();
 
     expect(container).toMatchInlineSnapshot(`
+      .c0 {
+        --jelly-beans-size: 1;
+        line-height: calc(var(--jelly-beans-size) * 1.5rem);
+        margin-block-end: 0;
+        margin-block-start: calc(var(--jelly-beans-size) * 1.5rem);
+        text-align: start;
+      }
+
+      .c0:first-child {
+        margin-block-end: 0;
+        margin-block-start: 0;
+      }
+
       <div>
         <p
-          class="Paragraph-g9z6tr-0 dyzFah"
+          class="c0"
           size="1"
         >
           <x-word
@@ -57,7 +68,7 @@ describe('Words', () => {
           />
         </p>
         <p
-          class="Paragraph-g9z6tr-0 dyzFah"
+          class="c0"
           size="1"
         >
           <x-word

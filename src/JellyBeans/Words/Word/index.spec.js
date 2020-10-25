@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { cleanup, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
 import { Word } from '.';
 
@@ -18,8 +18,6 @@ const renderComponent = (overrides) =>
   render(<Word {...defaultProps} {...overrides} />);
 
 describe('Word', () => {
-  beforeEach(cleanup);
-
   test('should render properly', () => {
     const { container } = renderComponent();
 
