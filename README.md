@@ -1,7 +1,7 @@
 [npm-url]: https://www.npmjs.com/package/@n8io/jelly-beans
-[npm-image]: https://badge.fury.io/js/jelly-beans.svg
+[npm-image]: https://badge.fury.io/js/%40n8io%2Fjelly-beans.svg
 [license-url]: https://github.com/n8io/jelly-beans/blob/main/LICENSE
-[demo-url]: https://codesandbox.io
+[demo-url]: https://codesandbox.io/s/n8iojelly-beans-chpjb?file=/src/App.js
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/n8io/jelly-beans/main/logo.gif"/>
@@ -14,7 +14,7 @@
 
 > A React component for generating visual lorem ipsum
 
-Play with the [demo on codesandbox.io](demo-url)
+Play with the [demo](demo-url)
 
 ## Example Usage
 
