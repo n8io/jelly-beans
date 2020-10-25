@@ -1,8 +1,6 @@
-[npm-url]: https://www.npmjs.com/package/n8io/jelly-beans
+[npm-url]: https://www.npmjs.com/package/@n8io/jelly-beans
 [npm-image]: https://badge.fury.io/js/jelly-beans.svg
-[commitizen-url]: http://commitizen.github.io/cz-cli/
-[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[license-url]: https://github.com/n8io/jelly-beans/LICENSE
+[license-url]: https://github.com/n8io/jelly-beans/blob/main/LICENSE
 [demo-url]: https://codesandbox.io
 
 <p align="center">
@@ -44,7 +42,7 @@ yarn add @n8io/jelly-beans
 or [unpkg](unpkg.com) cdn
 
 ```html
-<script src="https://unpkg.com/@n8io/jelly-beans/lib/index.min.js"></script>
+<script src="https://unpkg.com/@n8io/jelly-beans/build/static/js/main.js"></script>
 ```
 
 ## License
