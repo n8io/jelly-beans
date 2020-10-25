@@ -5,5 +5,5 @@ export default create({
   brandTitle: 'Jelly Beans',
   brandUrl: 'https://github.com/n8io/jelly-beans',
   brandImage:
-    'https://raw.githubusercontent.com/n8io/hosted-assets/master/img/logo.webp',
+    'https://raw.githubusercontent.com/n8io/jelly-beans/main/logo.webp',
 });

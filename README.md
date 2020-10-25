@@ -6,7 +6,7 @@
 [demo-url]: https://codesandbox.io
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/n8io/hosted-assets/master/img/logo.webp"/>
+  <img src="https://raw.githubusercontent.com/n8io/jelly-beans/main/logo.gif"/>
 </p>
 
 # @n8io/jelly-beans
