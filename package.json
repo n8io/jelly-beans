@@ -1,5 +1,5 @@
 {
-  "name": "jelly-beans",
+  "name": "@n8io/jelly-beans",
   "main": "build/static/js/main.js",
   "version": "0.1.1",
   "license": "MIT",

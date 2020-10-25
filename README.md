@@ -1,4 +1,4 @@
-[npm-url]: https://www.npmjs.com/package/jelly-beans
+[npm-url]: https://www.npmjs.com/package/@n8io/jelly-beans
 [npm-image]: https://badge.fury.io/js/jelly-beans.svg
 [license-url]: https://github.com/n8io/jelly-beans/blob/main/LICENSE
 [demo-url]: https://codesandbox.io
@@ -10,7 +10,6 @@
 # jelly-beans
 
 [![npm][npm-image]][npm-url]
-[![Commitizen friendly][commitizen-image]][commitizen-url]
 
 
 > A React component for generating visual lorem ipsum
@@ -22,27 +21,27 @@ Play with the [demo on codesandbox.io](demo-url)
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import { JellyBeans } from "jelly-beans";
+import { JellyBeans } from "@n8io/jelly-beans";
 
 ReactDOM.render(JellyBeans, document.getElementById('root'));
 ```
 
 ### Installation
 
-Available via [npm](https://www.npmjs.com/package/jelly-beans)
+Available via [npm](https://www.npmjs.com/package/@n8io/jelly-beans)
 
 ```shell
-npm install -S jelly-beans
+npm install -S @n8io/jelly-beans
 
 # -OR-
 
-yarn add jelly-beans
+yarn add @n8io/jelly-beans
 ```
 
 or [unpkg](unpkg.com) cdn
 
 ```html
-<script src="https://unpkg.com/jelly-beans/build/static/js/main.js"></script>
+<script src="https://unpkg.com/@n8io/jelly-beans/build/static/js/main.js"></script>
 ```
 
 ## License
