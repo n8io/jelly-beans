@@ -28,7 +28,7 @@ describe('Words', () => {
     expect(container).toMatchInlineSnapshot(`
       <div>
         <p
-          class="Paragraph-sc-8xh4rr-0 eRLnjE"
+          class="Paragraph-g9z6tr-0 dyzFah"
           size="1"
         >
           <x-word
@@ -57,7 +57,7 @@ describe('Words', () => {
           />
         </p>
         <p
-          class="Paragraph-sc-8xh4rr-0 eRLnjE"
+          class="Paragraph-g9z6tr-0 dyzFah"
           size="1"
         >
           <x-word

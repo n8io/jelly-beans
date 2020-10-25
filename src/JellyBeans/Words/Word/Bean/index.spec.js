@@ -19,7 +19,7 @@ describe('Bean', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       <span
-        class="Bean-sc-1hbca7i-0 fccDdM"
+        class="Bean-pbdwoy-0 ektixt"
         color="#0F0"
         radius="100"
         size="5"

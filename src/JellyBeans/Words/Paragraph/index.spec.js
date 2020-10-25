@@ -18,7 +18,7 @@ describe('Paragraph', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       <p
-        class="Paragraph-sc-8xh4rr-0 dSyFWd"
+        class="Paragraph-g9z6tr-0 ElqaM"
       >
         <x-children />
       </p>

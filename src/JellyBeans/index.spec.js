@@ -20,7 +20,7 @@ describe('JellyBeans', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       <div
-        class="Container-sc-1bx1t2b-0 DHIdg"
+        class="Container-jlt4ba-0 eDVujq"
       >
         <x-words
           count="25"

@@ -18,7 +18,7 @@ describe('Container', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       <div
-        class="Container-sc-1bx1t2b-0 iSUVVq"
+        class="Container-jlt4ba-0 ecAWRU"
       >
         <x-children />
       </div>
