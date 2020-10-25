@@ -1,7 +1,7 @@
 {
   "name": "jelly-beans",
   "main": "build/static/js/main.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "A React component for generating visual lorem ipsum",
   "homepage": "<%= homepageUrl %>",
