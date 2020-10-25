@@ -1,16 +1,15 @@
 {
   "name": "@n8io/jelly-beans",
   "main": "build/static/js/main.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "A React component for generating visual lorem ipsum",
-  "homepage": "<%= homepageUrl %>",
+  "homepage": "https://github.com/n8io/jelly-beans",
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "build:storybook": "build-storybook -s public",
     "build": "react-app-rewired build --library",
     "clean": "rm -rf node_modules && yarn",
-    "commit": "git-cz",
     "coverage": "yarn -s run test -- --coverage",
     "deploy": "gh-pages -d storybook-static",
     "dev": "yarn -s start",
