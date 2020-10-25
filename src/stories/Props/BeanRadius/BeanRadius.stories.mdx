@@ -1,0 +1,51 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../../..';
+
+<Meta component={JellyBeans} title="Props/Bean Radius" />
+
+## Bean Radius
+
+The relative curvature of the bean corners. Default value: `100`
+
+_NOTE: Values should be a number between `0` and `100`_
+
+### 100
+
+<Canvas>
+  <Story name="Max (100)">
+    <JellyBeans beans={100} beanRadius={100} />
+  </Story>
+</Canvas>
+
+### 75
+
+<Canvas>
+  <Story name="75">
+    <JellyBeans beans={100} beanRadius={75} />
+  </Story>
+</Canvas>
+
+### 50
+
+<Canvas>
+  <Story name="50">
+    <JellyBeans beans={100} beanRadius={50} />
+  </Story>
+</Canvas>
+
+### 25
+
+<Canvas>
+  <Story name="25">
+    <JellyBeans beans={100} beanRadius={25} />
+  </Story>
+</Canvas>
+
+### 0
+
+<Canvas>
+  <Story name="Min (0)">
+    <JellyBeans beans={100} beanRadius={0} />
+  </Story>
+</Canvas>

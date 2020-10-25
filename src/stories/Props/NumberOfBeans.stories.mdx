@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Number of Beans" />
+
+## Number of Beans
+
+The number of beans to show _OR_ an array of bean widths. Default value `25`
+
+### Random Beans
+
+For example, `5` => will render 5 **random** width beans
+
+<Canvas>
+  <Story name="Number of Beans">
+    <JellyBeans beans={5} />
+  </Story>
+</Canvas>
+
+### Fixed Width Beans
+
+For example, `[1,2,3,4,5]` will render 5 **fixed width** beans
+
+<Canvas>
+  <Story name="Bean Widths">
+    <JellyBeans beans={[1, 2, 3, 4, 5]} />
+  </Story>
+</Canvas>

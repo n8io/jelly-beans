@@ -1,0 +1,40 @@
+{
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "browser": true,
+    "jest": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": [
+    "react-app"
+  ],
+  "rules": {
+    "template-tag-spacing": "off",
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*test.js",
+          "**/*stories.js",
+          "config-overrides.js"
+        ]
+      }
+    ],
+    "class-methods-use-this": "off",
+    "no-plusplus": "off",
+    "consistent-return": "off",
+    "implicit-arrow-linebreak": "off",
+    "import/first": "off",
+    "function-paren-newline": "off",
+    "padded-blocks": "off",
+    "no-shadow": "off",
+    "object-curly-newline": "off",
+    "arrow-parens": [
+      "warn",
+      "always"
+    ]
+  }
+}

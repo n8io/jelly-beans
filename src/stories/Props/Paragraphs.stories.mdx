@@ -1,0 +1,15 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Paragraphs" />
+
+## Paragraphs
+
+The number of paragraphs to evenly split the beans over.
+
+<Canvas>
+  <Story name="Paragraphs">
+    <JellyBeans beans={100} paragraphs={3} />
+  </Story>
+</Canvas>

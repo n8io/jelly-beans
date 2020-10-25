@@ -1,0 +1,17 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Size" />
+
+## Size
+
+The relative size of the beans. Default `1`.
+
+_NOTE: Values should be a number between `0.0` and `1.0`._
+
+<Canvas>
+  <Story name="Size">
+    <JellyBeans beans={200} size={0.5} />
+  </Story>
+</Canvas>

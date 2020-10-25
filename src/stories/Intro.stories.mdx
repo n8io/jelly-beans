@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import {
+  ColorVariations,
+  JellyBeans,
+  Intro,
+  argTypes,
+  defaultArgs,
+} from './helpers';
+
+<Meta component={Intro} title="Intro" argTypes={argTypes} />
+
+<Canvas>
+  <Story
+    name="Intro"
+    args={{
+      ...defaultArgs,
+      beans: 120,
+      colorVariations: ColorVariations.MONOKAI,
+      isCentered: true,
+      size: 0.75,
+    }}
+  >
+    {Intro.bind({})}
+  </Story>
+</Canvas>

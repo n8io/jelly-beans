@@ -1,0 +1,15 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Grayscale" />
+
+## Grayscale Beans
+
+Whether or not the beans shoud be gray scaled. Default value `false`
+
+<Canvas>
+  <Story name="Grayscale">
+    <JellyBeans beans={30} isGrayscale />
+  </Story>
+</Canvas>

@@ -1,0 +1,15 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Centering" />
+
+## Centering Beans
+
+Whether or not the beans should be horizontally centered. Default value `false`
+
+<Canvas>
+  <Story name="Centering">
+    <JellyBeans beans={20} isCentered />
+  </Story>
+</Canvas>

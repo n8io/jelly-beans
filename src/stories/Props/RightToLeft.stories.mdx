@@ -1,0 +1,17 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { capitalCase } from 'change-case';
+import { ColorVariations, JellyBeans } from '../..';
+
+<Meta component={JellyBeans} title="Props/Right to Left" />
+
+## Right to Left Beans
+
+Whether or not the beans direction is right to left.
+
+_NOTE: This value is ignored when `isCentered` is `true`._
+
+<Canvas>
+  <Story name="Right to Left">
+    <JellyBeans beans={25} isRtl />
+  </Story>
+</Canvas>
