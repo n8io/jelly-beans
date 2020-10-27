@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { number, string } from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { niceWordLengths } from '../../../constants/niceWordLengths';
