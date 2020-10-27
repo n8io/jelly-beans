@@ -24,23 +24,9 @@ describe('Words', () => {
     const { container } = renderComponent();
 
     expect(container).toMatchInlineSnapshot(`
-      .c0 {
-        --jelly-beans-size: 1;
-        line-height: calc(var(--jelly-beans-size) * 1.5rem);
-        margin-block-end: 0;
-        margin-block-start: calc(var(--jelly-beans-size) * 1.5rem);
-        text-align: start;
-      }
-
-      .c0:first-child {
-        margin-block-end: 0;
-        margin-block-start: 0;
-      }
-
       <div>
         <p
-          class="c0"
-          size="1"
+          style="margin-block-end: 0; line-height: 1.5rem; margin-block-start: 1.5rem; text-align: start;"
         >
           <x-word
             backgroundcolor="#F00"
@@ -68,8 +54,7 @@ describe('Words', () => {
           />
         </p>
         <p
-          class="c0"
-          size="1"
+          style="margin-block-end: 0; line-height: 1.5rem; margin-block-start: 1.5rem; text-align: start;"
         >
           <x-word
             backgroundcolor="#F00"

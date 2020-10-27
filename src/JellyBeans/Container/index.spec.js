@@ -17,24 +17,8 @@ describe('Container', () => {
     const { container } = renderComponent();
 
     expect(container.firstChild).toMatchInlineSnapshot(`
-      .c0 {
-        --jelly-beans-grayscale: 100;
-        --jelly-beans-rtl: rtl;
-        direction: var(--jelly-beans-rtl);
-        display: inline-block;
-        -webkit-filter: grayscale(calc(var(--jelly-beans-grayscale) * 1%));
-        filter: grayscale(calc(var(--jelly-beans-grayscale) * 1%));
-        height: 100%;
-        overflow-x: hidden;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        width: 100%;
-      }
-
       <div
-        class="c0"
+        style="display: inline-block; height: 100%; overflow-x: hidden; user-select: none; width: 100%; direction: rtl; filter: grayscale(100%);"
       >
         <x-children />
       </div>

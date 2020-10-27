@@ -1,26 +1,30 @@
-import styled from 'styled-components/macro';
-import { read, toName } from '../../../utils/cssVariable';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { bool, number } from 'prop-types';
+import React from 'react';
 
-const Name = {
-  SIZE: toName('size'),
+const baseStyles = {
+  marginBlockEnd: '0',
 };
 
-const Read = {
-  SIZE: read('size'),
+const Paragraph = ({ isCentered, size, ...props }) => {
+  const styles = {
+    ...baseStyles,
+    lineHeight: `${size * 1.5}rem`,
+    marginBlockStart: `${size * 1.5}rem`,
+    textAlign: isCentered ? 'center' : 'start',
+  };
+
+  return <p {...props} style={styles} />;
 };
 
-const Paragraph = styled.p`
-  ${Name.SIZE}: ${({ size }) => size};
+Paragraph.propTypes = {
+  isCentered: bool,
+  size: number,
+};
 
-  line-height: calc(${Read.SIZE} * 1.5rem);
-  margin-block-end: 0;
-  margin-block-start: calc(${Read.SIZE} * 1.5rem);
-  text-align: ${({ isCentered }) => (isCentered ? 'center' : 'start')};
-
-  &:first-child {
-    margin-block-end: 0;
-    margin-block-start: 0;
-  }
-`;
+Paragraph.defaultProps = {
+  isCentered: false,
+  size: 1,
+};;
 
 export { Paragraph };

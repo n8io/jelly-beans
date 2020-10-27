@@ -1,37 +1,25 @@
-import styled from 'styled-components/macro';
-import { read, toName } from '../../../../utils/cssVariable';
+import React from 'react';
 
-const Name = {
-  COLOR: toName('color'),
-  RADIUS: toName('radius'),
-  SIZE: toName('size'),
+const baseStyles = {
+  display: 'inline',
+  fontFamily: 'monospace',
+  maxWidth: '100%',
+  overflowX: 'hidden',
+  width: 'auto',
 };
 
-const Read = {
-  COLOR: read('color'),
-  RADIUS: read('radius'),
-  SIZE: read('size'),
+const Bean = ({ children, color, radius, size }) => {
+  const styles = {
+    ...baseStyles,
+    borderRadius: `${(radius / 100) * 0.5 * size * 1}rem`,
+    color,
+    backgroundColor: color,
+    fontSize: `${size}rem`,
+    marginInlineEnd: `${size * 0.25}rem`,
+    marginBlockStart: `${size * 0.25}rem`,
+  };
+
+  return <span style={styles}>{children}</span>;
 };
-
-const radius = ({ radius }) => radius;
-const size = ({ size }) => size;
-
-const Bean = styled.span`
-  ${Name.COLOR}: ${({ color }) => color};
-  ${Name.RADIUS}: ${({ radius }) => radius};
-  ${Name.SIZE}: ${({ size }) => size};
-
-  border-radius: calc((${radius} / 100) * 0.5 * ${size} * 1rem);
-  background-color: ${Read.COLOR};
-  color: ${Read.COLOR};
-  display: inline;
-  font-family: monospace;
-  font-size: calc(${Read.SIZE} * 1rem);
-  margin-inline-end: calc(${Read.SIZE} * 0.25rem);
-  margin-block-start: calc(${Read.SIZE} * 0.25rem);
-  max-width: 100%;
-  overflow-x: hidden;
-  width: auto;
-`;
 
 export { Bean };
