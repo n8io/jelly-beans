@@ -1,27 +1,33 @@
-import styled from 'styled-components/macro';
-import { read, toName } from '../../utils/cssVariable';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { bool } from 'prop-types';
+import React from 'react';
 
-const Name = {
-  GRAYSCALE: toName('grayscale'),
-  RTL: toName('rtl'),
+const baseStyles = {
+  display: 'inline-block',
+  height: '100%',
+  overflowX: 'hidden',
+  userSelect: 'none',
+  width: '100%',
 };
 
-const Read = {
-  GRAYSCALE: read('grayscale'),
-  RTL: read('rtl'),
+const Container = ({ isGrayscale, isRtl, ...props }) => {
+  const styles = {
+    ...baseStyles,
+    direction: isRtl ? 'rtl' : 'inherit',
+    filter: isGrayscale ? `grayscale(100%)` : '',
+  };
+
+  return <div style={styles} {...props} />;
 };
 
-const Container = styled.div`
-  ${Name.GRAYSCALE}: ${({ isGrayscale }) => (isGrayscale ? 100 : 0)};
-  ${Name.RTL}: ${({ isRtl }) => (isRtl ? 'rtl' : 'inherit')};
+Container.propTypes = {
+  isGrayscale: bool,
+  isRtl: bool,
+};
 
-  direction: ${Read.RTL};
-  display: inline-block;
-  filter: grayscale(calc(${Read.GRAYSCALE} * 1%));
-  height: 100%;
-  overflow-x: hidden;
-  user-select: none;
-  width: 100%;
-`;
+Container.defaultProps = {
+  isGrayscale: false,
+  isRtl: false,
+};
 
 export { Container };

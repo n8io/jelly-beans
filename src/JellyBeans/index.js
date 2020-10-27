@@ -67,39 +67,39 @@ const JellyBeans = ({
 
 JellyBeans.propTypes = {
   /**
-   Either the number of variations or an array of strings. These string can be any css supported color string: E.g., `hex`, `rgba`, `hsl`, etc
+  Either the number of variations or an array of strings. These string can be any css supported color string: E.g., `hex`, `rgba`, `hsl`, etc
   */
   colorVariations: oneOfType([number, arrayOf(string)]),
   /**
-   Whether or not the beans should be horizontally centered
+  Whether or not the beans should be horizontally centered
   */
   isCentered: bool,
   /**
-   Whether or not the beans shoud be gray scaled
+  Whether or not the beans shoud be gray scaled
   */
   isGrayscale: bool,
   /**
-   Whether or not the beans direction is right to left
+  Whether or not the beans direction is right to left
   */
   isRtl: bool,
   /**
-   A function that is called when the color palette changes. Returns `string[]`
+  A function that is called when the color palette changes. Returns `string[]`
   */
   onPaletteChange: func,
   /**
-   The number of paragraphs to evenly split the beans over
+  The number of paragraphs to evenly split the beans over
   */
   paragraphs: number,
   /**
-   The relative size of the beans
+  The relative size of the beans
   */
   size: number,
   /**
-   The relative curviness of the beans. From `0` (no rounding) to `1` (full rounding).
+  The relative curviness of the beans. From `0` (no rounding) to `1` (full rounding).
   */
   beanRadius: number,
   /**
-   The number of beans to show or an array of bean widths.
+  The number of beans to show or an array of bean widths.
   */
   beans: oneOfType([number, arrayOf(number)]),
 };
